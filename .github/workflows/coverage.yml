@@ -18,6 +18,6 @@ jobs:
       run: cargo tarpaulin -v --out Xml
       continue-on-error: true
     - name: Upload coverage
-      uses: codecov/codecov-action@v1.5.2
+      uses: codecov/codecov-action@v5.5.2
       with:
         token: ${{secrets.CODECOV_TOKEN}}
